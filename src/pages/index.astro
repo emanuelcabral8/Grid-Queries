@@ -26,6 +26,10 @@
     </body>
 </html>
 <style>
+    :root {
+        --main-color: oklch(0.9506 0.0172 248.01);
+        --nav-color: oklch(0.8751 0.0502 205.73);
+    }
     * {
         box-sizing: border-box;
         margin: 0;
@@ -40,7 +44,7 @@
     body {
         min-height: 100vh;
         line-height: 1.5;
-        background-color: oklch(0.9506 0.0172 248.01);
+        background-color: var(--main-color);
     }
 
     img,
@@ -87,7 +91,7 @@
         align-items: flex-start;
         padding: 2rem;
         gap: 1rem;
-        background-color: oklch(0.8751 0.0502 205.73);
+        background-color: var(--nav-color);
         opacity: 0;
         visibility: hidden;
         transform: translateX(100%);

@@ -57,7 +57,12 @@
 </html>
 
 <style>
-    /* RESET de CSS */
+    :root{
+         font-family: 'Roboto';
+         --background: oklch(0.9765 0.0098 87.47);
+         --red: oklch(0.6147 0.2171 25.41);
+         --yellow: oklch(0.8882 0.1677 104.82);
+    }
     *,
     *::before,
     *::after {
@@ -73,6 +78,7 @@
     body {
         min-height: 100vh;
         line-height: 1.5;
+        background-color: var(--background);
     }
 
     img,
@@ -119,11 +125,10 @@
     h1 {
         text-align: center;
         font-size: 100px;
-        font-family: 'Roboto';
         background: linear-gradient(
             to right,
-            oklch(0.6147 0.2171 25.41),
-            oklch(0.8882 0.1677 104.82)
+            var(--red),
+            var(--yellow)
         );
         color: white;
         text-shadow:
